@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+    <style>
+        @font-face {
+            font-family: 'Heavitas';
+            src: url('fonts/Heavitas.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 50%, #ffb6c1 100%);
+            font-family: 'Heavitas', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            font-style: italic;
+            opacity: 0;
+            animation: pageTransition 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes pageTransition {
+            0% {
+                opacity: 0;
+                transform: scale(0.95) translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #000000;
+            line-height: 1.3;
+            font-weight: 700;
+            max-width: 900px;
+        }
+
+        .image-container {
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            margin: 40px 0;
+            color: #000000;
+            font-weight: 700;
+        }
+
+        .button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 16px 48px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-style: italic;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 6px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.01em;
+        }
+
+        .button:hover {
+            background-color: #1a1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Relax, I'm messing with you</h1>
+    <div class="image-container">
+        <img src="images/_.jpeg" alt="Prank image">
+    </div>
+    <p class="subtitle">Trust the process. Continue.</p>
+    <a href="page3.html" class="button">Next</a>
+</body>
+</html>
+
